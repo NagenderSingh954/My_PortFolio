@@ -24,15 +24,17 @@ function Profile() {
   return (
     <>
     <section className='home-section bg-black px-50'>
-    <div className=' flex w-full  relative h-155 items-center justify-center gap-20 py-0'>
-    <div className=' relative flex justify-center items-center '>
+    <div className=' flex w-full  relative h-155 items-center justify-center gap-20 py-0 '>
+    <div className='hero-img relative flex justify-center items-center  '>
         <div className=' bg-transparent w-80 h-80 border-dashed border-3 border-green-300 rounded-[50%] box '></div>
         <div className='  css-img-box   w-75 h-75  absolute border-4 bg-transparent border-blue-500 rounded-[50%] overflow-hidden   '>
-          <img src={profileimage} alt='profile' className='w-full object-contain'/>
+         
+            <img src={profileimage} alt='profile' className='hero-photo w-full object-contain rounded-full '/>
+          
         </div>
     </div>
-    <div>
-      <div className='flex flex-col p-'>
+    
+      <div className='hero-info flex flex-col p-'>
         <div>
           <h1 className='font-bold text-5xl mt-5'>Hi, I'm <span className='name'>Nagendra Singh</span></h1>
           <p className='mt-5 text-gray-300 text-2xl' >I'm  {<Textanimation/>} </p>
@@ -53,7 +55,7 @@ function Profile() {
           ))}
         </div>
       </div>
-    </div>
+    
     </div>
     <div className='flex items-center justify-center-safe gap-35 text-center '>
       <div>
@@ -80,7 +82,7 @@ function Profile() {
         <div className='icons p-3 bg-black rounded-full text-3xl'>
         <i class="fa-brands fa-github"></i>
         </div>
-        <div className='icons p-3 bg-black rounded-full text-3xl text-black'>
+        <div className='icons p-3 bg-black rounded-full text-3xl '>
         <i class="fa-brands fa-leetcode"></i>
         </div>
         </div>

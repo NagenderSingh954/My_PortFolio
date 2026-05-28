@@ -16,9 +16,9 @@ function Navbar() {
 
   return (
     <>
-    <nav className="flex text-white bg-black p-4 items-center px-[2rem] py-[1rem] z-10 ">
+    <nav className="flex text-white bg-black p-4 items-center px-[2rem] py-[1rem] z-10 border-b-[1px] border-white">  {/*blut TODO*/}
      <div className="flex  items-center space-x-4">
-       <div>
+       <div> 
          <h1 className="text-2xl font-bold text-blue-400">NS</h1>
        </div>
        <div>

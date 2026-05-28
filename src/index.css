@@ -15,6 +15,7 @@ body{
 
 .animate-float {
   animation: float infinite ease-in-out;
+  /* color: rgb(132, 129, 129); */
 }
 .nav-item {
   position: relative;
@@ -135,4 +136,138 @@ body{
   50%{
     background-color: transparent;
   }
+}
+.project-card{
+  box-shadow: 0 0 20px rgb(0,255,255,.1);
+  border: 1px solid rgb(48, 77, 89);
+}
+.hero-img{
+  /* transition: all 0.5 linear; */
+  animation: tran 1.1s ease-in;
+}
+@keyframes tran {
+  from{
+    opacity: 0;
+    transform: translateX(-65px);
+  }
+  to{
+    opacity: 1;
+     transform: translateX(0px);
+  }
+}
+.hero-photo{
+  animation:scalling 1s ease-in-out;
+}
+@keyframes scalling {
+  from{
+      transform: scale(0.9);
+  }
+  to{
+   transform: scale(1);
+  }
+}
+.hero-info{
+  /* transition: all 0.5 linear; */
+  animation: heroinfo 1.1s ease-in;
+}
+@keyframes heroinfo {
+  from{
+    opacity: 0;
+    transform: translateX(65px);
+  }
+  to{
+    opacity: 1;
+     transform: translateX(0px);
+  }
+}
+
+.contact-title{
+  background:linear-gradient(
+    90deg,
+    #07b5dc,
+    #0fbee5,
+    #0bd4b3,
+    #06b6d4
+  );
+  background-clip: text;
+  color: transparent;
+   background-size: 600% auto;
+   animation: shine 10s linear infinite;
+   
+  /* color:  linear-gradient(to right, rgb(38, 236, 229), blue); */
+  
+}
+.contact-icons{
+  box-shadow: 0 0 15px rgb(8, 201, 239);
+  animation: float 3s linear infinite;
+}
+.contact-icons:nth-child(1){
+  animation-delay:0s;
+}
+
+.contact-icons:nth-child(2){
+  animation-delay:0.3s;
+}
+
+.contact-icons:nth-child(3){
+  animation-delay:0.6s;
+}
+
+.contact-icons:nth-child(4){
+  animation-delay:0.9s;
+}
+
+.contact-icons:nth-child(5){
+  animation-delay:1.2s;
+}
+
+.contact-icons:nth-child(6){
+  animation-delay:1.5s;
+}
+@keyframes float {
+
+  0%{
+    transform: translateY(6px);
+
+    box-shadow:
+      0 0 5px rgba(8, 201, 239, 0.7);
+  }
+
+  50%{
+    transform: translateY(-6px);
+
+    box-shadow:
+      0 0 15px rgba(8, 201, 239, 0.9);
+  }
+
+  100%{
+    transform: translateY(6px);
+
+    box-shadow:
+      0 0 5px rgba(8, 201, 239, 0.7);
+  }
+
+}
+.about-section{
+      width: 100%;
+    max-width: 1100px;
+    background: #ffffff0a;
+    padding: 3rem 3.5rem;
+    text-align: left;
+    line-height: 1.8;
+    border-radius: 18px;
+    box-shadow: 0 0 25px #00ffc814;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.about-page{
+  min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top, #0d0d0d, #000);
+    color: #fff;
+    padding: 3rem 1rem;
 }
