@@ -4,11 +4,16 @@ import Textanimation from './Textanimation'
 
 
 function Profile() {
-  const skills=['AI Enthusiast','Machine Learning Engineer','Deep Learning Expert','Computer Vision Researcher','Developer']
-  const Personals=[
+const skills = [
+  'Full Stack Developer',
+  'Problem Solver',
+  'DSA Enthusiast',
+  'JavaScript Expert',
+  'Tech Explorer'
+];  const Personals=[
     {sign:'📍',
       title:'Location',
-      des:'Ulhasnagar Thane India'
+      des:'Ulhasnagar, Thane India'
     },
     {
       sign:'📍',

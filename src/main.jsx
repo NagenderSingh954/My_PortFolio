@@ -9,6 +9,10 @@ import FloatingBubbles from './component/FloatingBubbles.jsx'
 import Project from './pages/Project.jsx'
 import Contact from './pages/Contact.jsx'
 import About from './pages/About.jsx'
+import Resume from './pages/Resume.jsx'
+import Skills from './pages/Skills.jsx'
+import Certificate from './pages/Certificate.jsx'
+import Blog from './pages/Blog.jsx'
 
 const route=createBrowserRouter([
   {
@@ -31,6 +35,22 @@ const route=createBrowserRouter([
       {
         path:'about',
         element:<About/>
+      },
+      {
+        path:'resume',
+        element:<Resume/>
+      },
+      {
+        path:'skills',
+        element:<Skills/>
+      },
+      {
+        path:'certificates',
+        element:<Certificate/>
+      },
+      {
+        path:'blog',
+        element:<Blog/>
       }
     ]
   }

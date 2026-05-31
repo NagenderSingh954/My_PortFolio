@@ -22,13 +22,13 @@ function Textanimation() {
                     setDisplay(currentText.substring(0, display.length + 1))
 
 
-                }, 200)
+                }, 100)
 
 
             } else {
                 timeout = setTimeout(() => {
                     setIsDeleting(true)
-                },200)
+                },100)
             }
         } else {
             if (display.length === 0) {

@@ -5,7 +5,6 @@ function Navbar() {
     const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Gallery', path: '/gallery' },
     { name: 'Skills', path: '/skills' },
     { name: 'Certificates', path: '/certificates' },
     { name: 'Blog', path: '/blog' },
@@ -16,7 +15,7 @@ function Navbar() {
 
   return (
     <>
-    <nav className="flex text-white bg-black p-4 items-center px-[2rem] py-[1rem] z-10 border-b-[1px] border-white">  {/*blut TODO*/}
+    <nav className="flex text-white bg-transparent backdrop-blur-sm p-4 items-center px-[2rem] py-[1rem] z-10 border-b-[1px] border-white sticky top-0 w-full">  {/*blut TODO*/}
      <div className="flex  items-center space-x-4">
        <div> 
          <h1 className="text-2xl font-bold text-blue-400">NS</h1>
