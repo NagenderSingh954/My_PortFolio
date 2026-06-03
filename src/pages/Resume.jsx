@@ -70,7 +70,7 @@ function Resume() {
               <a href="" className='hover:scale-105'>💼 LinkedIn</a>
              </div>
              <div>
-            <iframe src="../public/resume.pdf" frameborder="5" width="100%"
+            <iframe src="/resume.pdf" frameborder="5" width="100%"
   height="700" className='mt-7 rounded-xl'></iframe>
         </div>
         <div className='my-10 '>
