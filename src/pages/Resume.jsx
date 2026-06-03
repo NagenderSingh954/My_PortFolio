@@ -74,7 +74,7 @@ function Resume() {
   height="700" className='mt-7 rounded-xl'></iframe>
         </div>
         <div className='my-10 '>
-          <a href="../public/resume.pdf" className='bg-sky-400 inline-block transition-all duration-300  py-3 px-6 rounded-xl font-bold  hover:scale-105' download>⬇️ Download Resume</a>
+          <a href="/resume.pdf" className='bg-sky-400 inline-block transition-all duration-300  py-3 px-6 rounded-xl font-bold  hover:scale-105' download>⬇️ Download Resume</a>
         </div>
         </div>
        
