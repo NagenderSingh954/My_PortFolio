@@ -11,6 +11,7 @@ body {
   line-height: 1.5;
   overflow-y: scroll;
   background: #070b14;
+  /* width: 100vw; */
 }
 
 
@@ -403,4 +404,29 @@ nav{
     opacity: 1;
     transform: scale(1);
   }
+}
+@media (max-width:770px) {
+  .nav-items-container{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left:0;
+    top:0;
+    /* background:black; */
+    height: 100vh;
+
+  }
+ 
+
+  .nav-items{
+    flex-direction: column;
+    margin-top: 22px;
+    
+    width: 100%;
+  }
+  .nav-items li{
+    margin: 12px;
+    padding: 8px;
+  }
+
 }

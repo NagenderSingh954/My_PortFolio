@@ -94,10 +94,10 @@ function Skills() {
 
     return (
         <>
-            <section className='w-full  bg-black p-7 px-15'>
+            <section className='w-full  bg-black p-7 px-15 max-md:px-3'>
                 <h1 className='text-emerald-400 my-2 font-bold text-2xl'>MY Skills</h1>
                 <p className='text-gray-400'>✨ Technical expertise blended with creativity — explore my core competencies below.</p>
-                <div className=' skills-container relative mt-9 scale-container-animation' ref={stageRef}>
+                <div className=' skills-container relative mt-9 scale-container-animation max-md:w-[90%]' ref={stageRef}>
                     {SKILLS.map((item) => (
 
                         <div key={item.name}

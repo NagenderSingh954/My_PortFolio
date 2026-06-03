@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 function Navbar() {
@@ -12,6 +12,7 @@ function Navbar() {
     { name: 'About Me', path: '/about' },
     { name: 'Contact', path: '/contact' },
     ]
+    const [mobilemenu,setMobilemenu] = useState(true)
 
   return (
     <>
@@ -25,10 +26,10 @@ function Navbar() {
          <span className='text-gray-400 text-sm'>&#8226; Frontend-Developer</span>
        </div>
      </div>
-        <div className="flex-1 flex justify-center">
-            <ul className="flex space-x-9">
+        <div className={`nav-items-container transition-transform duration-300 ${mobilemenu ?'max-md:-translate-y-full':'max-md:translate-y-0 max-md:bg-black'} flex-1 flex justify-center`}>
+            <ul className={`nav-items flex space-x-9`}>
                { navItems.map((item)=>(
-                    <li key={item.name} className="  text-white hover:scale-108 font-medium text-md relative" >
+                    <li key={item.name} className="  text-white hover:scale-108 font-medium text-md relative" onClick={()=> setMobilemenu((pre)=>!pre)} >
                         <NavLink to={item.path} className={({ isActive }) =>` ${isActive ? 'text-blue-400 nav-item active bottom-1' : 'text-white nav-item'}`} >
                             {item.name}
                         </NavLink>
@@ -36,6 +37,10 @@ function Navbar() {
                 ))}
                 
             </ul>
+        </div>
+        <div className='text-3xl z-10 absolute right-6  md:hidden'>
+         <button onClick={()=> setMobilemenu((pre)=>!pre)}>{
+          mobilemenu ? <i class="fa-solid fa-bars"></i>:<i class="fa-solid fa-xmark"></i>}</button> 
         </div>
     </nav>
     </>
