@@ -34,7 +34,7 @@ const skills = [
         <div className=' bg-transparent w-80 h-80 border-dashed border-3 border-green-300 rounded-[50%] box '></div>
         <div className='  css-img-box   w-75 h-75  absolute border-4 bg-transparent border-blue-500 rounded-[50%] overflow-hidden   '>
          
-            <img src={profileimage} alt='profile' className='hero-photo w-full object-contain rounded-full '/>
+            <img src={profileimage} alt='Nagender Singh' className='hero-photo w-full object-contain rounded-full '/>
           
         </div>
     </div>
@@ -67,16 +67,24 @@ const skills = [
         <h1 className='font-medium text-2xl p-3 mb-2'>Connect with me</h1>
         <div className='flex gap-10 p-5'>
         <div className='icons p-3 bg-black rounded-full text-3xl'>
-        <i class="fa-brands fa-linkedin-in"></i>
+          <a href="https://www.linkedin.com/in/nagender-singh-3a4b89221" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
         </div>
         <div className='icons p-3 bg-black rounded-full text-3xl'>
-       <i class="fa-regular fa-envelope"></i>
+          <a href="mailto:nagendersingh954@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
         </div>
         <div className='icons p-3 bg-black rounded-full text-3xl'>
-        <i class="fa-brands fa-instagram"></i>
+          <a href="https://www.instagram.com/nagender.s_?igsh=Z205ZHZzNGF2Ym81" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
         <div className='icons p-3 bg-black rounded-full text-3xl'>
-        <i class="fa-brands fa-facebook-f"></i>
+          <a href="https://www.facebook.com/share/1X59mADHq2" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
         </div>
         </div>
       </div>
@@ -85,10 +93,14 @@ const skills = [
         <div className='flex gap-10 p-5 justify-center items-center'>
        
         <div className='icons p-3 bg-black rounded-full text-3xl'>
-        <i class="fa-brands fa-github"></i>
+         <a href="https://github.com/NagenderSingh954" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+          </a>
         </div>
-        <div className='icons p-3 bg-black rounded-full text-3xl '>
-        <i class="fa-brands fa-leetcode"></i>
+        <div className='icons p-3 bg-black  rounded-full text-3xl '>
+        <a href="https://leetcode.com/u/Nagender_singh" target="_blank" rel="noopener noreferrer" >
+            <i class="fa-solid fa-code"></i>
+          </a>
         </div>
         </div>
       </div>
